@@ -1,1 +1,640 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Videography | SandboxX Media Group</title><meta name="description" content="Professional videography services for events, brands, interviews, launches, artists, businesses, and social media campaigns."><meta property="og:title" content="Videography | SandboxX Media Group"><meta property="og:description" content="Professional videography services for events, brands, interviews, launches, artists, businesses, and social media campaigns."><meta property="og:type" content="website"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><nav class="navbar"><a href="index.html" class="logo">Sandbox<span>X</span> Media Group</a><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="videography.html">Videography</a></li><li><a href="drone.html">Drone</a></li><li><a href="editing.html">Video Editing</a></li><li><a href="photography.html">Photography</a></li><li><a class="nav-button" href="index.html#contact">Contact Us</a></li></ul></nav></header><main><section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Videography</p><h1>Professional video production that captures attention and builds trust.</h1><p>From events and brand promos to interviews, launches, performances, and social content, we film with purpose and polish.</p><div class="actions"><a href="index.html#contact" class="btn btn-primary">Book Videography</a><a href="index.html" class="btn btn-secondary">Back Home</a></div></div></section><section class="section split"><div><p class="eyebrow">What We Film</p><h2>Video content designed to make you look professional.</h2><p>SandboxX Media Group helps businesses, artists, creators, and community organizations capture strong visuals that are easy to use across websites, social media, ads, and presentations.</p><ul class="check-list"><li>Event coverage and recap videos</li><li>Business promotional videos</li><li>Brand story videos</li><li>Interviews and testimonials</li><li>Music and performance visuals</li><li>Short-form social media videos</li></ul></div><div class="visual-box">Cinematic<br>Videography</div></section><section class="section section-dark"><p class="eyebrow center">Options</p><h2 class="center">Flexible support for different project sizes.</h2><div class="grid package-grid"><article class="card"><h3>Basic Shoot</h3><p>Ideal for simple promos, short clips, social media footage, and quick interviews.</p></article><article class="card"><h3>Event Coverage</h3><p>Great for launches, parties, pop-ups, charity events, performances, and business activations.</p></article><article class="card"><h3>Brand Story</h3><p>Best for businesses that need a polished introduction, campaign video, or full promotional piece.</p></article></div></section><section class="cta"><h2>Let’s film your next project the right way.</h2><p>Tell us what you need captured and we’ll help shape the visual direction.</p><a href="index.html#contact" class="btn btn-primary">Contact SandboxX</a></section></main><footer><p>© <span id="year"></span> SandboxX Media Group. Where Creativity Plays.</p></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skull & Scorpion | Photography | SandboxX Media Group</title>
+  <meta name="description" content="Skull & Scorpion photography services for business media, corporate visuals, events, portraits, and brand storytelling." />
+
+  <style>
+    :root {
+      --ss-red: #B10F1A;
+      --ss-red-dark: #5E080E;
+      --ss-gold: #F6DD99;
+      --ss-black: #1A1A1A;
+      --ss-cream: #FFF7E1;
+      --ss-white: #FFFFFF;
+      --ss-muted: #D9C7A4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--ss-black);
+      color: var(--ss-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-wrap {
+      background:
+        radial-gradient(circle at 20% 10%, rgba(246, 221, 153, 0.16), transparent 28%),
+        radial-gradient(circle at 85% 25%, rgba(177, 15, 26, 0.34), transparent 30%),
+        linear-gradient(135deg, #120b0c 0%, #1a1a1a 45%, #39080d 100%);
+      min-height: 100vh;
+    }
+
+    .nav {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .logo-mark {
+      width: 54px;
+      height: 54px;
+      border: 2px solid var(--ss-gold);
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, rgba(177,15,26,0.9), rgba(26,26,26,0.92));
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    }
+
+    .logo-mark span {
+      color: var(--ss-gold);
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: rgba(255,255,255,0.82);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--ss-gold);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      border: 1px solid transparent;
+      transition: 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--ss-gold);
+      color: var(--ss-black);
+      box-shadow: 0 15px 40px rgba(246,221,153,0.22);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 55px rgba(246,221,153,0.34);
+    }
+
+    .btn-outline {
+      border-color: rgba(246,221,153,0.45);
+      color: var(--ss-gold);
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      background: rgba(246,221,153,0.12);
+    }
+
+    .hero {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+      padding: 78px 0 90px;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      align-items: center;
+      gap: 56px;
+    }
+
+    .eyebrow {
+      color: var(--ss-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: var(--ss-gold);
+    }
+
+    .hero p {
+      max-width: 630px;
+      color: rgba(255,255,255,0.78);
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .proof-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 620px;
+    }
+
+    .proof-card {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(246,221,153,0.14);
+    }
+
+    .proof-card strong {
+      display: block;
+      color: var(--ss-gold);
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .proof-card span {
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+      border-radius: 36px;
+      overflow: hidden;
+      border: 1px solid rgba(246,221,153,0.2);
+      background:
+        linear-gradient(rgba(26,26,26,0.08), rgba(26,26,26,0.08)),
+        repeating-linear-gradient(0deg, transparent 0 42px, rgba(246,221,153,0.12) 43px, rgba(246,221,153,0.12) 45px),
+        repeating-linear-gradient(90deg, transparent 0 42px, rgba(246,221,153,0.12) 43px, rgba(246,221,153,0.12) 45px),
+        linear-gradient(145deg, var(--ss-red) 0%, #22090c 100%);
+      box-shadow: 0 40px 90px rgba(0,0,0,0.45);
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 28px;
+      border-radius: 30px;
+      border: 1px solid rgba(246,221,153,0.24);
+    }
+
+    .center-mark {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .emblem {
+      width: 260px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 3px solid var(--ss-gold);
+      background: radial-gradient(circle at center, rgba(246,221,153,0.16), rgba(26,26,26,0.9) 66%);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 24px;
+      box-shadow: inset 0 0 40px rgba(246,221,153,0.1), 0 20px 60px rgba(0,0,0,0.42);
+    }
+
+    .emblem .skull {
+      font-size: 86px;
+      filter: grayscale(1);
+    }
+
+    .center-mark h2 {
+      color: var(--ss-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 20px;
+    }
+
+    .center-mark p {
+      max-width: 360px;
+      margin: 10px auto 0;
+      color: rgba(255,255,255,0.74);
+    }
+
+    section {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+      padding: 82px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 54px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .section-heading p {
+      max-width: 470px;
+      color: rgba(255,255,255,0.68);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      min-height: 260px;
+      padding: 28px;
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border: 1px solid rgba(246,221,153,0.14);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      right: -70px;
+      bottom: -70px;
+      background: rgba(177,15,26,0.32);
+    }
+
+    .service-card h3 {
+      color: var(--ss-gold);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: rgba(255,255,255,0.7);
+      font-size: 15px;
+    }
+
+    .portfolio-band {
+      width: 100%;
+      background: var(--ss-cream);
+      color: var(--ss-black);
+      padding: 86px 0;
+    }
+
+    .portfolio-inner {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .portfolio-item {
+      min-height: 280px;
+      border-radius: 30px;
+      padding: 24px;
+      display: flex;
+      align-items: end;
+      background:
+        linear-gradient(180deg, rgba(26,26,26,0.08), rgba(26,26,26,0.82)),
+        linear-gradient(135deg, var(--ss-red), var(--ss-black));
+      color: white;
+      overflow: hidden;
+    }
+
+    .portfolio-item:nth-child(2) {
+      min-height: 420px;
+      background:
+        linear-gradient(180deg, rgba(26,26,26,0.05), rgba(26,26,26,0.82)),
+        linear-gradient(135deg, #201415, var(--ss-red));
+    }
+
+    .portfolio-item:nth-child(3) {
+      background:
+        linear-gradient(180deg, rgba(26,26,26,0.05), rgba(26,26,26,0.82)),
+        linear-gradient(135deg, var(--ss-black), #7b0c14);
+    }
+
+    .portfolio-item h3 {
+      color: var(--ss-gold);
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      padding: 28px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(246,221,153,0.16);
+    }
+
+    .step .number {
+      color: var(--ss-gold);
+      font-size: 42px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      color: rgba(255,255,255,0.68);
+    }
+
+    .cta {
+      text-align: center;
+      padding: 90px 30px;
+      border-radius: 42px;
+      background:
+        radial-gradient(circle at center top, rgba(246,221,153,0.2), transparent 32%),
+        linear-gradient(135deg, var(--ss-red), var(--ss-black));
+      border: 1px solid rgba(246,221,153,0.22);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+    }
+
+    .cta h2 {
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      max-width: 660px;
+      margin: 0 auto 28px;
+      color: rgba(255,255,255,0.76);
+      font-size: 18px;
+    }
+
+    .contact-strip {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      color: var(--ss-gold);
+      font-weight: 800;
+    }
+
+    footer {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+      padding: 34px 0 44px;
+      color: rgba(255,255,255,0.52);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 46px;
+      }
+
+      .hero-visual {
+        min-height: 420px;
+      }
+
+      .services-grid,
+      .process,
+      .portfolio-grid,
+      .proof-row {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading p {
+        margin-top: 14px;
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="nav">
+      <a href="index.html" class="brand-lockup" aria-label="Back to SandboxX home">
+        <div class="logo-mark"><span>S&S</span></div>
+        <div>
+          <div>Skull & Scorpion</div>
+          <small style="color: rgba(255,255,255,0.58); letter-spacing: .08em;">SandboxX Affiliate</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn btn-outline">Book a Shoot</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Corporate photography with sharp creative direction</div>
+          <h1>Business visuals with <span>bite.</span></h1>
+          <p>
+            Skull & Scorpion creates clean, striking photography for entrepreneurs, brands, corporate teams,
+            events, products, and professional campaigns — powered by the creative network of SandboxX Media Group.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a Booking</a>
+            <a href="#portfolio" class="btn btn-outline">View Style Direction</a>
+          </div>
+
+          <div class="proof-row">
+            <div class="proof-card"><strong>Brand</strong><span>Professional imagery for websites, ads, and social media.</span></div>
+            <div class="proof-card"><strong>Events</strong><span>Clean coverage for launches, mixers, and corporate moments.</span></div>
+            <div class="proof-card"><strong>Portraits</strong><span>Confident headshots and business portraits with personality.</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-visual" aria-label="Skull and Scorpion visual brand panel">
+          <div class="center-mark">
+            <div>
+              <div class="emblem"><div class="skull">☠</div></div>
+              <h2>Skull & Scorpion</h2>
+              <p>Precision. Presence. Premium media assets for brands that want to be remembered.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services">
+        <div class="section-heading">
+          <h2>Photography services built for business.</h2>
+          <p>Designed for clients who need polished visuals that can move across websites, flyers, social media, press kits, ads, and client presentations.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Corporate Portraits</h3>
+            <p>Headshots, leadership portraits, team photos, and personal branding images that feel confident without looking stiff.</p>
+          </article>
+          <article class="service-card">
+            <h3>Brand Campaigns</h3>
+            <p>Visual content for websites, products, services, business launches, and promotional campaigns.</p>
+          </article>
+          <article class="service-card">
+            <h3>Event Coverage</h3>
+            <p>Professional coverage for networking events, community events, launches, panels, and business activations.</p>
+          </article>
+          <article class="service-card">
+            <h3>Content Packages</h3>
+            <p>Photo sets prepared for social media, ads, flyers, thumbnails, banners, reels covers, and press materials.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="portfolio-band" id="portfolio">
+    <div class="portfolio-inner">
+      <div class="section-heading">
+        <h2>Style direction.</h2>
+        <p>Red for energy. Sandbox gold for trust and polish. Dark contrast for a premium, memorable finish.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <div><h3>Business Portraits</h3><p>Professional, sharp, and ready for LinkedIn, websites, and brand decks.</p></div>
+        </article>
+        <article class="portfolio-item">
+          <div><h3>Event Storytelling</h3><p>Capture the room, the reactions, the details, and the moments that sell the story.</p></div>
+        </article>
+        <article class="portfolio-item">
+          <div><h3>Brand Assets</h3><p>Images designed to support marketing, content calendars, and client campaigns.</p></div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-wrap">
+    <section id="process">
+      <div class="section-heading">
+        <h2>Simple process. Strong results.</h2>
+        <p>Built to make the client experience feel organized, professional, and easy from first message to final delivery.</p>
+      </div>
+
+      <div class="process">
+        <article class="step">
+          <div class="number">01</div>
+          <h3>Plan the look</h3>
+          <p>We confirm the purpose, audience, location, shot list, brand colors, and final media needs.</p>
+        </article>
+        <article class="step">
+          <div class="number">02</div>
+          <h3>Capture with intent</h3>
+          <p>Every photo is shot with business use in mind: clean framing, strong lighting, and usable content variety.</p>
+        </article>
+        <article class="step">
+          <div class="number">03</div>
+          <h3>Deliver polished assets</h3>
+          <p>Final images are edited and organized for web, print, social, advertising, and portfolio use.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="cta">
+        <div class="eyebrow">Book Skull & Scorpion through SandboxX</div>
+        <h2>Ready to sharpen your brand image?</h2>
+        <p>
+          Tell us what you need photographed, where it will be used, and your preferred date. We’ll help shape the shoot into a clean business-ready media package.
+        </p>
+        <a class="btn btn-primary" href="mailto:sdbx@sandboxxmediagroup.com?subject=Skull%20%26%20Scorpion%20Photography%20Booking">Request Photography Services</a>
+        <div class="contact-strip">
+          <span>sdbx@sandboxxmediagroup.com</span>
+          <span>•</span>
+          <span>(437) 385-1248</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© Skull & Scorpion. A SandboxX Media Group affiliate.</span>
+      <span>Photography • Events • Portraits • Brand Media</span>
+    </footer>
+  </div>
+</body>
+</html>
