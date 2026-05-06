@@ -75,6 +75,22 @@
     </section>
   </main>
 
+<section class="contact-panel" id="contact">
+  <p class="eyebrow">Contact Us</p>
+
+  <h2>Let’s build something worth noticing.</h2>
+
+  <form class="contact-form" onsubmit="sendSandboxEmail(event)">
+    <input type="text" id="name" placeholder="Your name" required>
+    <input type="email" id="email" placeholder="Your email" required>
+    <input type="text" id="subject" placeholder="What do you need?" required>
+
+    <textarea id="message" placeholder="Tell us about your project..." required></textarea>
+
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</section>
+  
   <footer class="site-footer">
     <p>© SandboxX Media Group. Where Creativity Plays.</p>
   </footer>
