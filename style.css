@@ -1288,3 +1288,168 @@ a {
     display: none;
   }
 }
+
+
+/* === Clean Layout Fix: easier on the eyes, less jumbled === */
+.home-minimal-main {
+  min-height: calc(100vh - 130px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  padding: 58px 5% 80px;
+}
+
+.home-splash {
+  max-width: 920px;
+}
+
+.home-launchpad {
+  margin: 0 auto 20px;
+  padding: 0;
+  max-width: 920px;
+}
+
+.home-launchpad .eyebrow {
+  margin-bottom: 12px;
+}
+
+.home-launchpad h2 {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: clamp(1.75rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.page-main {
+  padding: 0 0 70px;
+}
+
+.page-hero,
+.cinematic-page-hero {
+  width: min(1120px, 92%);
+  max-width: none;
+  margin: 42px auto 36px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  padding: clamp(46px, 7vw, 86px);
+  border-radius: 42px;
+  border: 1px solid rgba(246,221,153,0.18);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.35);
+}
+
+.page-hero h1,
+.cinematic-page-hero h1 {
+  max-width: 900px;
+  font-size: clamp(2.5rem, 6vw, 5.4rem);
+}
+
+.page-hero p,
+.cinematic-page-hero p {
+  max-width: 760px;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+}
+
+.page-hero .hero-actions,
+.cinematic-page-hero .hero-actions {
+  margin-top: 4px;
+}
+
+.feature-grid,
+.services-list,
+.package-grid,
+.process-luxe,
+.trust-grid,
+.what-you-get,
+.founder-signal,
+.about-marketplace-notes,
+.brief-helper {
+  width: min(1120px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-grid.services-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  padding: 34px 0;
+}
+
+.feature-card,
+.content-card,
+.package-card,
+.process-card,
+.about-card {
+  line-height: 1.65;
+}
+
+.feature-card h3,
+.package-card h3,
+.content-card h2,
+.about-card h2 {
+  line-height: 1.15;
+}
+
+.package-section,
+.compact-packages,
+.brief-helper,
+.about-marketplace-notes,
+.luxe-section {
+  padding: 56px 0;
+}
+
+.section-heading.centered {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-heading.centered h2 {
+  line-height: 1.08;
+}
+
+.contact-panel,
+.final-cta {
+  margin-top: 48px;
+  margin-bottom: 82px;
+}
+
+.quick-actions {
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 900px) {
+  .page-hero,
+  .cinematic-page-hero {
+    width: min(94%, 680px);
+    margin-top: 24px;
+    padding: 42px 24px;
+    border-radius: 30px;
+  }
+
+  .feature-grid.services-list,
+  .feature-grid,
+  .services-list,
+  .package-grid,
+  .process-luxe,
+  .trust-grid,
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-minimal-main {
+    padding: 38px 4% 70px;
+  }
+
+  .home-splash {
+    padding: 44px 20px;
+    border-radius: 30px;
+  }
+}
