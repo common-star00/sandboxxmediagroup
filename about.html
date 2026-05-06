@@ -6,33 +6,63 @@
   <title>About | SandboxX Media Group</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="luxe-body">
   <header class="site-header">
     <a href="index.html" class="site-logo">SandboxX Media Group</a>
     <button class="menu-toggle" aria-label="Open navigation">☰</button>
     <nav class="site-nav">
-      <a href="index.html" class="sandbox-home-btn">SandboxX Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="photography.html">Gallery / Photos</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="photography.html">Photography</a>
+      <a href="videography.html">Videography</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
     </nav>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero">
+  <main class="about-page luxe-page">
+    <section class="about-hero">
       <p class="eyebrow">About SandboxX</p>
-      <h1>A media company built for bold ideas.</h1>
-      <p>SandboxX Media Group is a creative production company focused on helping people and businesses present themselves with confidence, quality, and impact.</p>
+      <h1>Where creativity plays with purpose.</h1>
+      <p>SandboxX Media Group is a Canadian creative media company built to help brands, artists, businesses, and communities look professional, sound unforgettable, and move with purpose.</p>
     </section>
 
-    <section class="content-card">
-      <h2>Who We Serve</h2>
-      <p>We work with businesses, artists, entrepreneurs, community organizations, creators, and brands that need strong media assets for the real world and the digital world.</p>
+    <section class="about-grid">
+      <article class="about-card"><h2>Our Mission</h2><p>Our mission is to bring bold ideas to life through powerful media, storytelling, design, sound, video, photography, marketing, and creative production. We create polished content that helps people stand out in a digital world.</p></article>
+      <article class="about-card"><h2>The Founder</h2><p>SandboxX was founded by Alex Simpson, a creative business owner with a background in private investigation, close protection, media production, video editing, sound editing, and community-focused entrepreneurship.</p><p>His style blends discipline, strategy, humour, anime-inspired imagination, street intelligence, loyalty, and cinematic ambition — creating a company that feels both professional and unforgettable.</p></article>
+      <article class="about-card"><h2>Skull & Scorpion</h2><p>Skull & Scorpion is a SandboxX affiliate focused on bold photography, cinematic visuals, brand storytelling, portraits, events, and creative media with edge.</p><p>The style is gritty, sharp, dark, confident, and memorable — built for people and brands that do not want to look ordinary.</p></article>
+    </section>
+
+    <section class="about-marketplace-notes">
+      <div class="section-heading centered">
+        <p class="section-label">The SandboxX Difference</p>
+        <h2>Platform clarity. Boutique attention. Founder-level edge.</h2>
+        <p class="section-subtext">Major creative marketplaces make it easy to browse services. SandboxX keeps that clarity, but adds personal direction, stronger identity, and a curated creative network.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card pop-card"><h3>Service Categories</h3><p>Clients can quickly understand what we offer: photography, videography, drone, editing, sound, design, and campaign support.</p></article>
+        <article class="feature-card pop-card"><h3>Creative Matching</h3><p>Instead of sending clients into a crowded marketplace, we guide them toward the right creative direction or affiliate.</p></article>
+        <article class="feature-card pop-card"><h3>Project Briefing</h3><p>Every project starts with goals, audience, style, timeline, deliverables, and intended platform use.</p></article>
+        <article class="feature-card pop-card"><h3>Business-Ready Delivery</h3><p>Final assets are organized for professional use across web, social, ads, events, and presentations.</p></article>
+      </div>
+    </section>
+
+
+    <section class="contact-panel" id="contact">
+      <p class="eyebrow">Contact Us</p>
+      <h2>Let’s build something worth noticing.</h2>
+      <form class="contact-form" onsubmit="sendSandboxEmail(event)">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Tell us what you need..." required></textarea>
+        <button type="submit" class="btn btn-primary">Send Email</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer"><p>© SandboxX Media Group.</p></footer>
+  <footer class="site-footer">
+    <p>© SandboxX Media Group. Where Creativity Plays.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
